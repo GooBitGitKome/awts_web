@@ -1,9 +1,11 @@
 'use client'
 import Member from '@/components/Member'
+import Burger from '@/components/Burger'
 
 export default function page() {
   return (
-    <div className='flex min-h-screen flex-col items-center justify-between p-24'>
+    <div>
+      <Burger />
       <Member />
     </div>
   )

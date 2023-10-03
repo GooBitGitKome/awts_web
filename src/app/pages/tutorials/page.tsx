@@ -1,10 +1,12 @@
 'use client'
-import TopContents from '@/components/TopContents'
+import Tutorials from '@/components/Tutorials'
+import Burger from '@/components/Burger'
 
-export default function Home() {
+export default function page() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 w-screen">
-      <TopContents />
-    </main>
+    <div>
+      <Burger />
+      <Tutorials />
+    </div>
   )
 }
