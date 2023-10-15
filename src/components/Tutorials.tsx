@@ -10,11 +10,11 @@ import BekoImage from '../../pic/beko.jpeg'
 export default function Tutorials() {
     return (
         <div className=''>
-          <h1 className='flex flex-col items-center text-5xl m-10'>Tutorials</h1>
+          <h1 className='flex flex-col items-center text-5xl m-10 relative top-20'>Tutorials</h1>
           <div className='flex flex-col p-10 items-center'>
             
-          <article className='w-[40%]'>
-              <h2 className='text-3xl mt-5'>CryptoZombies</h2>
+          <article className='w-[90%]'>
+              <h2 className='text-3xl mt-20'>CryptoZombies</h2>
               <div className='flex flex-row w-[100%]'>
                 <Link
                   isExternal 
@@ -31,13 +31,14 @@ export default function Tutorials() {
             </article>
   
   
-            <article className='w-[40%]'>
+            <article className='w-[90%]'>
               <h2 className='text-3xl mt-5'>Faucet App</h2>
               <div className='flex flex-row w-[100%]'>
                 <Link
                   isExternal
                   href="https://manablog.org/solidity-faucet/"
                   showAnchorIcon
+                  className=""
                 >
                   Create the Faucet App
                 </Link>
@@ -47,13 +48,14 @@ export default function Tutorials() {
               </div>
             </article>
   
-            <article className='w-[40%]'>
+            <article className='w-[90%]'>
               <h2 className='text-3xl mt-5'>Aizu Mujin</h2>
               <div className='flex flex-row w-[100%]'>
                 <Link
                   isExternal
                   href="/"
                   showAnchorIcon
+                  className=""
                 >
                   会津無尽へ
                 </Link>
@@ -66,7 +68,7 @@ export default function Tutorials() {
             
   
             <article className='w-[40%]'>
-              <h2 className='text-3xl Smt-5'>Other tutorials</h2>
+              <h2 className='text-3xl mt-20'>Other tutorials</h2>
               Coming soon...<br/>
             </article>
   

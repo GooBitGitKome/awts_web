@@ -7,10 +7,10 @@ import githubImage from '../../pic/GitHub-logo.png'
 export default function Showcase() {
     return (
         <div>
-          <h1 className='flex flex-col items-center text-5xl m-10'>Showcase</h1>
+          <h1 className='flex flex-col items-center text-5xl m-10 relative top-20'>Showcase</h1>
           <div className='flex flex-col p-10 items-center'>
-            <article className='w-[50%]'>
-              <h2 className='text-3xl mt-5'>2023 Summer</h2>
+            <article className='w-[90%]'>
+              <h2 className='text-3xl mt-20'>2023 Summer</h2>
 
               <div className="p-2">
               <Card className="py-3">
@@ -73,7 +73,7 @@ export default function Showcase() {
 
             </article>
   
-            <article className='w-[50%]'>
+            <article className='w-[90%]'>
               <h2 className='text-3xl mt-5'>Aizu Mujin</h2>
               <div>aaaaaaaaaaaa</div>
             </article>

@@ -35,7 +35,8 @@ export default function Burger() {
         <Image src={logoImage} width={70} height={70} alt="Tailwind CSS" />
       </Link>
 
-      <button className="z-50 space-y-2 absolute mt-3 right-12 max-sm:top-9" onClick={handleMenuOpen}> {/* max-md:fixed */}
+      <div className='fixed right-4 z-50'>
+      <button className="z-50 space-y-2 absolute mt-3 right-12 max-md:top-3 max-md:right-5" onClick={handleMenuOpen}> {/* max-md:fixed */}
           <span
             className={
               isOpen
@@ -56,6 +57,7 @@ export default function Burger() {
             }
           />
         </button>
+        </div>
 
       <div className='flex inset-y-0 right-0 w-[31px] h-full'>
       <nav id='menu'
