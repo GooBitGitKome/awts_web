@@ -7,6 +7,10 @@ export default function Eevents() {
           <h1 className='flex flex-col items-center text-5xl m-10 relative top-20'>Events</h1>
           <div className='flex flex-col p-10 text-left items-center'>
             <article className='w-[90%]'>
+              <h2 className='text-3xl mt-20 mb-2 text-center '>-このページはまだ工事中です-</h2>
+            </article>
+            
+            <article className='w-[90%]'>
               <h2 className='text-3xl mt-20 mb-2'>お花見</h2>
               <Image
                 width={0}

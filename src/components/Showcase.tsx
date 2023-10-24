@@ -9,10 +9,10 @@ export default function Showcase() {
         <div>
           <h1 className='flex flex-col items-center text-5xl m-10 relative top-20'>Showcase</h1>
           <div className='flex flex-col p-10 items-center'>
-            <article className='w-[90%]'>
-              <h2 className='text-3xl mt-20'>2023 Summer</h2>
+            <article className='w-[80%]'>
+              <h2 className='text-3xl mt-20 mb-3'>2023 Summer</h2>
 
-              <div className="p-2">
+              <div className="p-2 w-[80%]">
               <Card className="py-3">
                 <CardHeader className="pb-0 pt-1 px-4 flex-col items-start">
                   <h4 className="font-bold text-large">プロンプト・ハウス</h4>
@@ -42,7 +42,7 @@ export default function Showcase() {
               </Card>
               </div>
 
-              <div className='p-2'>
+              <div className='p-2 w-[80%]'>
               <Card className="py-3">
                 <CardHeader className="pb-0 pt-1 px-4 flex-col items-start">
                   <h4 className="font-bold text-large">ダイナミックNFTのフルオンチェーン化による成長するフラクタルツリー</h4>
@@ -73,9 +73,9 @@ export default function Showcase() {
 
             </article>
   
-            <article className='w-[90%]'>
+            <article className='w-[80%]'>
               <h2 className='text-3xl mt-5'>Aizu Mujin</h2>
-              <div>aaaaaaaaaaaa</div>
+              <div></div>
             </article>
   
             <article>

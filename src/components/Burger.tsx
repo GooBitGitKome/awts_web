@@ -79,11 +79,11 @@ export default function Burger() {
               Top
             </Link>
           </li>
-          <li>
+          {/*<li>
             <Link onClick={handleMenuClose} href="/pages/member">
               Members
             </Link>
-          </li>
+        </li>*/}
           <li>
             <Link onClick={handleMenuClose} href="/pages/tutorials">
               Tutorials

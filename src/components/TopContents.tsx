@@ -1,14 +1,16 @@
 'use client'
 // import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
-import Link from "next/link";
+import Link_ from "next/link";
 import Image_ from "next/image";
 import {Table, TableHeader, TableColumn, TableBody, TableRow, TableCell} from "@nextui-org/react";
 import {Card, CardBody, CardFooter, Image} from "@nextui-org/react";
 import {Snippet} from "@nextui-org/react";
+import {Link} from "@nextui-org/react"
 // import bg_Image from "../../pic/Background.png"
 import x_Icon from "../../pic/X.png";
 import e_mail_Icon from "../../pic/e-mail_icon.png";
 import github_Icon from '../../pic/GitHub-logo.png';
+import JBA_Icon from '../../pic/logo.png'
 
 
 export default function TopContents() {
@@ -33,7 +35,7 @@ export default function TopContents() {
 
   const plan = [
     {
-      title: "花見",
+      title: "お花見",
       img: "../data/kinono.png",
       memo: '',
     },
@@ -71,9 +73,9 @@ export default function TopContents() {
           <div className="bg-[url('../../pic/Background.png')] w-auto h-screen max-md:bg-contain md:bg-cover bg-center bg-no-repeat flex items-center z-10">
               <div className="w-screen text-center">
                   <h1 className="z-30">
-                    <Link className='text-7xl' href='/'>
+                    <Link_ className='text-7xl' href='/'>
                         AWTS
-                    </Link>
+                    </Link_>
                   </h1>
               </div>
           </div>
@@ -88,7 +90,7 @@ export default function TopContents() {
           <article className='w-[93%]'>
             <h2 className='text-3xl font-bold tracking-tight mt-20 mb-3'>About us</h2>
             私たちは、主にWeb3の核となる技術の「ブロックチェーン」について学んでいます！<br/>
-            Web3技術を活用したSolidityによるアプリ開発や、話題になっている最新技術(ChatGPT、Next.js 等)の勉強、開発を行っています。<br/>
+            Web3技術を活用したSolidityによるアプリ開発や、話題になっている技術(大規模言語モデル 等)の勉強、開発を行っています。<br/>
             勉強会のみんなで一緒に学んでいくので、プログラミング初心者の方も大歓迎！！<br/>
             ぜひ、私たちと一緒に学びませんか？<br/>
             { /*<span className='w-1/3 absolute right-20'><a href="/pages/about">more<span aria-hidden="true">&rarr;</span></a></span> */}
@@ -118,7 +120,7 @@ export default function TopContents() {
               {active.map((item, index) => (
                 <Card shadow="sm" key={index} isPressable onPress={() => console.log(item.img)}>
                 <CardBody className="overflow-visible p-0">
-                <Link href='/pages/actives'>
+                <Link_ href='/pages/actives'>
                   <Image
                     isZoomed
                     shadow="sm"
@@ -128,7 +130,7 @@ export default function TopContents() {
                     className="w-full object-cover h-[140px]"
                     src={item.img}
                   />
-                </Link>
+                </Link_>
                 </CardBody>
                 <CardFooter className="text-small justify-between">
                   <b>{item.title}</b>
@@ -146,7 +148,7 @@ export default function TopContents() {
               {show.map((item, index) => (
                 <Card shadow="sm" key={index} isPressable onPress={() => console.log(item.img)}>
                 <CardBody className="overflow-visible p-0">
-                <Link href='/pages/showcase'>
+                <Link_ href='/pages/showcase'>
                   <Image
                     isZoomed
                     shadow="sm"
@@ -156,7 +158,7 @@ export default function TopContents() {
                     className="w-full object-cover h-[140px]"
                     src={item.img}
                   />
-                </Link>
+                </Link_>
                 </CardBody>
                 <CardFooter className="text-small justify-between">
                   <b className="">{item.title}</b>
@@ -168,7 +170,7 @@ export default function TopContents() {
             <span className='w-1/3 absolute left-[45%] max-lg:left-[65%]'><a href="/pages/showcase">more<span aria-hidden="true">&rarr;</span></a></span>
           </article>
 
-          <article className='w-[93%]'>
+          { /* <article className='w-[93%]'>
             <h2 className='text-3xl font-bold tracking-tight mt-20 mb-2'>Members</h2>
             <Table aria-label="Members table" className="w-[75%]">
               <TableHeader>
@@ -191,7 +193,7 @@ export default function TopContents() {
               </TableBody>
               
             </Table>
-          </article>
+              </article> */ }
 
           <article className='w-[93%]'>
             <h2 className='text-3xl font-bold tracking-tight mt-10 mb-2'>Events</h2>
@@ -199,7 +201,7 @@ export default function TopContents() {
               {plan.map((item, index) => (
                 <Card shadow="sm" key={index} isPressable onPress={() => console.log(item.img)}>
                 <CardBody className="overflow-visible p-0">
-                <Link href='/pages/events'>
+                <Link_ href='/pages/events'>
                   <Image
                     isZoomed
                     shadow="sm"
@@ -209,7 +211,7 @@ export default function TopContents() {
                     className="w-full object-cover h-[140px]"
                     src={item.img}
                   />
-                </Link>
+                </Link_>
                 </CardBody>
                 <CardFooter className="text-small justify-between">
                   <b>{item.title}</b>
@@ -239,12 +241,26 @@ export default function TopContents() {
             </Table>
           </article>
 
+          <article className='w-[93%]'>
+            <h2 className='text-3xl font-bold tracking-tight mt-20 mb-2'>受賞歴</h2>
+            <div className="flex flex-row">
+              <Link
+                  isExternal
+                  href="https://jba-web.jp/activity/20230902"
+                  className="mr-5"
+                >
+                  JBA Blockchain Hackathon 2023 Summer
+                </Link>
+                <div className="">Ginco賞</div>
+              </div>
+          </article>
+
           <article className=''>
             <h2 className='text-center text-2xl mt-20'>Contact us</h2>
             <div className='flex flex-col items-center'>
-            <Link className="" href="https://twitter.com/Aizuweb3">
+            <Link_ className="" href="https://twitter.com/Aizuweb3">
               <Image_ className='' src={x_Icon} width={35} height={35} alt="" />
-            </Link>
+            </Link_>
             <div className='flex flex-row items-center p-2'>
             <Image_ src={e_mail_Icon} width={40} height={40} alt="" />
             <Snippet symbol=" " size="md">awtsweb3*gmail.com</Snippet>
@@ -255,40 +271,22 @@ export default function TopContents() {
 
           <article>
             <div className="flex flex-col items-center">
+              <p className="text-xl pt-10 mb-2">所属団体</p>
+            </div>
+            <Link_ className="flex flex-col items-center" href="https://jba-web.jp">
+              <Image_ className='' src={JBA_Icon} width={50} height={50} alt="Tailwind CSS" />
+            </Link_>
+          </article>
+
+          <article>
+            <div className="flex flex-col items-center">
               <p className="text-xs pt-10">Create by AWTS</p>
             </div>
-            <Link className="flex flex-col items-center" href="https://github.com/s1290248/awts_web">
+            <Link_ className="flex flex-col items-center" href="https://github.com/s1290248/awts_web">
               <Image_ className='' src={github_Icon} width={50} height={50} alt="Tailwind CSS" />
-            </Link>
+            </Link_>
           </article>
     </div>
       </div>
   )
 }
-
-{ /*<div className='flex flex-col text-2xl items-center'>
-<Tabs className=''>
-    <TabList>
-      <Tab className='p-3'>About us</Tab>
-      <Tab className='p-3'>活動場所/時間</Tab>
-      <Tab className='p-3'>活動の様子</Tab>
-      <Tab className='p-3'>成果物</Tab>
-      <Tab className='p-3'>メンバー</Tab>
-      <Tab className='p-3'>募集情報</Tab>
-      <Tab className='p-3'>Contact us</Tab>
-    </TabList>
-
-    <TabPanels>
-      <TabPanel>
-         /* <p className='text-3xl p-5'>About us</p>
-        こんにちは。<br/>
-      </TabPanel>
-      <TabPanel>
-        <p>two!</p>
-      </TabPanel>
-      <TabPanel>
-        <p>three!</p>
-      </TabPanel>
-    </TabPanels>
-    </Tabs>
-</div> */ }
